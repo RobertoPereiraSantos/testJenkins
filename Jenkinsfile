@@ -1,5 +1,9 @@
 pipeline {
-    agent any
+ agent {
+  node {
+   name 'NodeTest'
+  }
+ }
 
     stages {
         stage('Build') {
